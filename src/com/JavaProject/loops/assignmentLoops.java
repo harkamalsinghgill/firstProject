@@ -46,6 +46,8 @@ public class assignmentLoops {
         }
         System.out.println(factorial);
 
+        System.out.println("harry");
+        System.out.println("vivek");
     }
 }
 
