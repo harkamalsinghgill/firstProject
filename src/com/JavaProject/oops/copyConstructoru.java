@@ -1,2 +1,9 @@
-package com.JavaProject.oops;public class copyConstructoru {
+package com.JavaProject.oops;
+
+public class copyConstructoru {
+
+
+
+
+
 }
