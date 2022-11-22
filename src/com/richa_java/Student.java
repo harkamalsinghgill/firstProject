@@ -8,28 +8,43 @@ public class Student {
     int grade;
 
     public Student() {
+        System.out.println("default ");
+    }
+
+    public Student(int id) {
+        this();
+        System.out.println("default 1");
+        this.id=id;
+    }
+
+    public Student(int id, String name) {
+        this(id);
+        System.out.println("constructor 2");
+        this.name = name;
     }
 
     public Student(int id, String name, int grade) {
-        this.id = id;
-        this.name = name;
+        this(id, name);
+        System.out.println("constructor 3");
         this.grade = grade;
+
 
     }
 
-void display(){
-    System.out.println(id);
-    System.out.println(name);
-    System.out.println(grade);
-}
+    void display() {
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(grade);
+    }
+
     public static void main(String[] args) {
 
-        Student st = new Student();
+       // Student st = new Student();
         Student st1 = new Student(1, "harry", 56);
-        Student st2 = new Student(2, "gill", 60);
+       // Student st2 = new Student(2, "gill", 60);
 
-        st1.display();
-        st2.display();
+
+
 
 
     }
